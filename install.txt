@@ -1,0 +1,30 @@
+JFK-RPC-Blockexplorer Install Instructions
+
+ConanDW
+
+http://explorer.bitcoin1776.org
+
+This instance of the JFK-RPC-Blockexplorer was installed on a $10 docker droplet on Digital Ocean but will work with any Linux distribution that supports docker along with docker for windows.
+
+git clone https://github.com/Bitcoin1776/jfk-rpc-explorer.git
+
+cd jfk-rpc-explorer
+
+docker build -t jfk-rpc-blockexplorer . 
+
+cd
+
+docker run -p 3002:3002 jfk-rpc-blockexplorer
+
+MAKE SURE YOU PUT THE COMMANDS IN EXACLY AS STATED INCLUDING PERIODS OR IT WILL NOT WORK!
+
+I recommend putting it into another directory call gitDIRS so that they can be seperated from other directories.
+
+To do that just type:
+
+mkdir gitDIRS
+
+cd gitDIRS
+
+Then do your git clone in the current directory and cd out of it for the rest of the installation.
+
